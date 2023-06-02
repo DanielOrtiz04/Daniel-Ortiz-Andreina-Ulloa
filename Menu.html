@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menú con Botones</title>
+  <style>
+    body.estilo1 {
+      background-color: red;
+    }
+    body.estilo2 {
+      background-color: blue; 
+    }
+    body.estilo3 {
+      background-color: green; 
+    }
+    .menu {
+      text-align: center;
+    }
+    .menu button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .menu button:hover {
+      background-color: grey;
+      color: white;
+    }
+    .menu button:focus {
+      outline: none;
+    }
+    .estilo1 button {
+      font-family: Arial, sans-serif;
+      background-color: rgb(55, 5, 97); 
+      color: white;
+    }
+    .estilo2 button {
+      font-family: Verdana, sans-serif;
+      background-color: green; 
+      color: white; 
+    }
+    .estilo3 button {
+      font-family: Impact, sans-serif;
+      background-color: rgb(0, 140, 255); 
+      color: white; 
+    }
+  
+    hr {
+      border: none;
+      height: 1px;
+      background-color: black;
+      margin: 10px 0;
+    }
+
+    h3 {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 20px;
+      color: black;
+      margin: 10px 0;
+      text-align: center;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <h3>Proyeto Final</h3>
+  <hr>
+  <h3>Ingeniero Marco Tulio Valdez Albizurez </h3>
+  <hr>
+  <h3>Facultad de Ingenieria En Sistemas de Información</h3>
+  <hr>
+  <h3>Introducción a los Sistemas de Computó</h3>
+  <hr>
+  <h3>Andreina Jannin Ulloa Telles 0907-23-14513 </h3>
+  <hr>
+  <h3>Daniel Alexander Ortiz Cabrera 0907-23-14054</h3>
+  <hr>
+    <div class="menu">
+    <button onclick="window.open('Curriculum1.html', '_blank')">Curriculum 1</button>
+    <button onclick="window.open('Curriculum2.html', '_blank')">Curriculum 2</button>
+    <button onclick="window.open('calculadora.html', '_blank')">Calculadora</button>
+    <button onclick="window.open('https://demodaniel0704.web.app/', '_blank')">Firebase 1</button>
+    <button onclick="window.open('Botones.html', '_blank')">Estilos</button>
+  </div>
+  <script type="text/javascript">
+    function applyStyle(style) {
+      var buttons = document.getElementsByClassName('menu')[0].getElementsByTagName('button');
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].className = style;
+      }
+      document.body.className = style;
+    }
+  </script>
+</body>
+</html>
